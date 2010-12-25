@@ -1,0 +1,82 @@
+/* Default syle for mintPhoto */
+/* (C) Copyright 2009 Nicholas Paun. All Rights Reserved. */
+ 
+body
+ {
+  background-color: #7C9C6D;
+ }
+
+.mintphoto-content
+ {
+  margin-left: 6%;
+ }
+
+.mintphoto-title
+ {
+  text-align: center;
+  font-family: Arial,sans-serif;
+  font-size: 150%;
+  color: white;
+  background: url('mint-bg2.png') repeat top left;
+  border: 1px solid #DDDDDD;
+ }
+
+.mintphoto-thumb
+ {
+  display: block;
+  border: 0;
+  margin-left: auto;
+  margin-right: auto;
+ }
+
+.mintphoto-imageviewer
+ {
+  text-align: center;
+  height: 100%;
+ }
+
+.mintphoto-image
+ {
+  text-align: center;
+  border: 0;
+  width: 938px;
+  height: 704px;
+ }
+
+.mintphoto-caption
+ {
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: center;
+ }
+
+.mintphoto-home
+ {
+  text-decoration: none;
+ }
+
+.mintphoto-imagepreview
+{
+  width: 200px;
+  height: 200px;
+  background: url(bg-shade-light.png) repeat-x scroll left bottom;
+  border: 1px solid #DDDDDD;
+  float: left;
+  margin: 2px 2px 2px 2px;
+}
+
+.mintphoto-caption-small
+ {
+  font-size: 70%;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+ }
+
+.mintphoto-caption-link
+{
+ display: block;
+ text-decoration: none;
+ margin-top: 20px;
+ color: #7A9A6B;
+} 

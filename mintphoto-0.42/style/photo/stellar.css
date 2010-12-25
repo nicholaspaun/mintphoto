@@ -1,0 +1,22 @@
+/* Stellar syle for mintPhoto */
+/* (C) Copyright 2009 Nicholas Paun. All Rights Reserved. */
+
+@import url('style.css'); /*Load Main Style Sheet*/
+
+body
+ {
+  background-color: black;
+ }
+
+.mintphoto-title
+ {
+  font-family: monospace;
+  font-size: 225%;
+  background: url('NGC2359AUL_gendler.jpg') repeat scroll left; /*Emerald Helmet*/
+ }
+
+.mintphoto-caption-link
+ {
+  display: block;
+  margin-top: 20px;
+ }
