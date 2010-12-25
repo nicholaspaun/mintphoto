@@ -1,0 +1,21 @@
+/* Stellar syle for mintPhoto */
+/* (C) Copyright 2009 Nicholas Paun. All Rights Reserved. */
+
+@import url('style.css'); /*Load Main Style Sheet*/
+
+body
+ {
+  background-color: #000017;
+ }
+
+.mintphoto-title
+ {
+  background: url('Red_and_green_aurora.jpg') repeat scroll right; /*Red and Green Aurora*/
+  font-family: Dejavu Sans Light, sans-serif;
+ }
+
+.mintphoto-caption-link
+ {
+  display: block;
+  margin-top: 20px;
+ }

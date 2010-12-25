@@ -1,0 +1,52 @@
+#README for MintPhoto 0.42
+#(C) Copyright 2009-2010 Nicholas Paun. All Rights Reserved.
+
+* Contents *
+
+1. Warnings
+2. Issues
+3. How to Install
+4. Gallery Setup
+5. Misc.
+6. Changelog
+7. Contact
+
+* 1. Warnings *
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+* 2. Issues *
+
+- no auto-generated index page
+- directory traversal under DOCUMENT_ROOT
+
+* 3. How to Install *
+
+ 1. run ./install
+ 2. read 'Gallery Setup'
+ 3. modify example configuration to your needs
+ 4. generate gallery
+ 5. try it out!
+
+* 4. Gallery Setup *
+
+ 1. create a configuration for your gallery.
+     (you can set a title, stylesheet and photo/thumb directories)
+ 2. run thumbify (from tools/) to generate thumbnails
+ 3. run commentify (requires jhead) to set EXIF comments
+ 4. add gallery name to index.mint
+
+* 5. Misc. *
+
+I believe the parts of the images used are fair use.
+
+- the image 'bg-shade-light.png' is part of the Sky drupal theme and is licenced under the GPL
+- the images used in the photo themes are CC-BY-SA (authors: Lisa Tancsics, Mila Zinkova)
+- the header image used in the minty theme belongs to the Linuxmint project
+
+* 6. Changelog *
+- Fourth Version
+ - supports multiple galleries
+
+* 7. Contact *
+Nicholas Paun <nicholaspaun@gmail.com>, http://iceberg.dnsalias.net
