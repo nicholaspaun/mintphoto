@@ -1,14 +1,15 @@
-#Readme for alpine-backup 0.60
-#(C) Copyright 2010 Nicholas Paun. All Rights Reserved.
+#README for MintPhoto 0.42
+#(C) Copyright 2009-2010 Nicholas Paun. All Rights Reserved.
 
 * Contents *
 
 1. Warnings
 2. Issues
 3. How to Install
-4. Misc.
-5. Changelog
-6. Contact
+4. Gallery Setup
+5. Misc.
+6. Changelog
+7. Contact
 
 * 1. Warnings *
 
@@ -16,27 +17,36 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 
 * 2. Issues *
 
-- only volume by volume backup is supported
-- so far only nwfs and local mount are supported
-- you must append 'ago' to delete_after options
-- no man page
+- no auto-generated index page
+- directory traversal under DOCUMENT_ROOT
 
 * 3. How to Install *
 
  1. run ./install
- 2. read TUTORIAL
- 3. modify the example configuration file to your needs
- 4. set up the environment
+ 2. read 'Gallery Setup'
+ 3. modify example configuration to your needs
+ 4. generate gallery
  5. try it out!
 
-* 4. Misc. *
+* 4. Gallery Setup *
 
-Have a lot of fun!
+ 1. create a configuration for your gallery.
+     (you can set a title, stylesheet and photo/thumb directories)
+ 2. run thumbify (from tools/) to generate thumbnails
+ 3. run commentify (requires jhead) to set EXIF comments
+ 4. add gallery name to index.mint
 
-* 5. Changelog *
+* 5. Misc. *
 
-- Sixth Version
- - complete rewrite
+I believe the parts of the images used are fair use.
 
-* 6. Contact *
+- the image 'bg-shade-light.png' is part of the Sky drupal theme and is licenced under the GPL
+- the images used in the photo themes are CC-BY-SA (authors: Lisa Tancsics, Mila Zinkova)
+- the header image used in the minty theme belongs to the Linuxmint project
+
+* 6. Changelog *
+- Fourth Version
+ - supports multiple galleries
+
+* 7. Contact *
 Nicholas Paun <nicholaspaun@gmail.com>, http://iceberg.dnsalias.net
