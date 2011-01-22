@@ -11,7 +11,7 @@ function gallery_switch($_INDEX)
  {
   //This function switches galleries on user request
   $gallery = $_SERVER['PATH_INFO']; #Get gallery based on path
-  $gallery = str_replace('/','',$gallery); #Remove initial slashes
+  $gallery = ltrim($gallery,'/'); #Remove initial slashes /* Allow slashes in URL: 2010-10-16*/
    
   if (empty($gallery))
     die("Error [1]: No gallery selected."); #Prevent displaying nothing
