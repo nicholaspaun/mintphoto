@@ -30,7 +30,7 @@ function gallery_main_content($_MINT)
  {
   //This function generates the gallery page
   $photodir = $_MINT['photodir'];
-  $script = $_SERVER['PHP_SELF'];
+  $script = parse_url($_SERVER['REQUEST_URI'],PHP_URL_PATH); #Remove query string
   $glob = glob($photodir."*");
 
   foreach ($glob as $photo)
@@ -60,14 +60,20 @@ function gallery_photo_content($photo,$_MINT)
 
   $doc_root = $_SERVER['DOCUMENT_ROOT'];
   $path = str_replace($doc_root,'',$photodir);
-
+  
+  $glob = glob($photodir."*");
+  $current = array_search($photodir.$photo,$glob);
+  $previous = basename($glob[$current-1]);
+  $next = basename($glob[$current+1]);
+  $script = parse_url($_SERVER['REQUEST_URI'],PHP_URL_PATH); #Remove query string
+  
 echo <<<EOF
    <p class='mintphoto-imageviewer'>
     <a href='$path$photo' class='mintphoto-anchor'>
      <img src='$path$photo' title='$caption' alt='$caption' class='mintphoto-image' />
     </a>
    </p>
-   <p class='mintphoto-caption'>$caption</p>
+   <p class='mintphoto-caption'><a href='$script?show=$previous' class='mintphoto-nav' title='Previous'>&larr;</a> $caption <a href='$script?show=$next' class='mintphoto-nav' title='Next'>&rarr;</a></p>
 EOF;
  }
 ?>
