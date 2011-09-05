@@ -1,0 +1,106 @@
+/* Postcards style for MintPhoto */
+/* (C) Copyright 2009-2011 Nicholas Paun. All Rights Reserved. */
+
+@import url('//fonts.googleapis.com/css?family=Waiting+for+the+Sunrise'); /* Comment out this line to disable font. */
+ 
+body
+ {
+  background-color: #B5A277;
+ }
+
+.mintphoto-content
+ {
+  margin: auto;
+  width: 88%;
+ }
+
+.mintphoto-title
+ {
+  text-align: center;
+  font-family: "Waiting for the Sunrise",Arial,sans-serif;
+  font-size: 200%;
+  color: black;
+  background: url('airmail-bg4.png') repeat-x bottom left;
+  max-height: 125px;
+  margin: 0% 4%;
+  padding: 3% 0%;
+  
+  /* Drop Shadow */
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+ }
+
+.mintphoto-thumb
+ {
+  display: block;
+  border: 0;
+  margin: auto;
+ }
+
+.mintphoto-imageviewer
+ {
+  text-align: center;
+  height: 100%;
+  margin: 0;
+ }
+
+.mintphoto-image
+ {
+  text-align: center;
+  border: 0;
+  width: 100%;
+  max-width: 938px;
+  max-height: 704px;
+ }
+
+.mintphoto-caption
+ {
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: center;
+ }
+
+.mintphoto-nav
+ {
+  text-decoration: none;
+  color: white;
+  font-size: 150%;
+  opacity: 0.5;
+ }
+  
+.mintphoto-home
+ {
+  text-decoration: none;
+ }
+
+.mintphoto-imagepreview
+ {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #DDDDDD;
+  float: left;
+  margin: 2px;
+
+  /* Drop Shadow */     
+  background-color: white;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+ }
+
+.mintphoto-caption-small
+ {
+  font-size: 70%;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+ }
+
+.mintphoto-caption-link
+{
+ display: block;
+ text-decoration: none;
+ margin-top: 20px;
+ color: black;
+} 
