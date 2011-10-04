@@ -1,7 +1,7 @@
-#README for MintPhoto 0.42
-#(C) Copyright 2009-2010 Nicholas Paun. All Rights Reserved.
+# README for MintPhoto 0.43
+*(C) Copyright 2009-2011 Nicholas Paun. All Rights Reserved.*
 
-* Contents *
+## Contents ##
 
 1. Warnings
 2. Issues
@@ -11,42 +11,51 @@
 6. Changelog
 7. Contact
 
-* 1. Warnings *
+## 1. Warnings ##
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-* 2. Issues *
+## 2. Issues/Roadmap ##
 
-- no auto-generated index page
-- directory traversal under DOCUMENT_ROOT
+* Admin interface can't create and edit galleries, yet. (0.44)
+* Media RSS Support (0.44)
 
-* 3. How to Install *
+## 3. How to Install ##
 
- 1. run ./install
- 2. read 'Gallery Setup'
- 3. modify example configuration to your needs
- 4. generate gallery
- 5. try it out!
+1. Run `./install`
+2. Read *Gallery Setup*
+3. Modify example configuration to your needs
+4. Generate gallery
+5. Try it out!
 
-* 4. Gallery Setup *
+## 4. Gallery Setup ##
 
- 1. create a configuration for your gallery.
-     (you can set a title, stylesheet and photo/thumb directories)
- 2. run thumbify (from tools/) to generate thumbnails
- 3. run commentify (requires jhead) to set EXIF comments
- 4. add gallery name to index.mint
+1. Create a configuration file for your gallery. (You can set a title, stylesheet and photo/thumb directories)
+2. Run `thumbify` (from `tools/`) to generate thumbnails.
+3. Add the gallery to `index.mint`
+4. Use the admin interface `/mint4c/a/<gallery>` to set captions
 
-* 5. Misc. *
+## About the Themes ##
 
-I believe the parts of the images used are fair use.
+* The Minty theme is the default MintPhoto theme. It has a light minty-green background and a clean look.
+  *The header image is a small slice from the header of the Linuxmint Project*
+* Minimal is a simple grey and white theme that can be used for testing.
+* Postcards is the latest MintPhoto theme. It uses CSS3 to create drop shadows for a scrapbook effect.
+  *Idea for the drop shadow: <http://nicolasgallagher.com/css-drop-shadows-without-images/>*
 
-- the image 'bg-shade-light.png' is part of the Sky drupal theme and is licenced under the GPL
-- the images used in the photo themes are CC-BY-SA (authors: Lisa Tancsics, Mila Zinkova)
-- the header image used in the minty theme belongs to the Linuxmint project
+## 6. Changelog ##
 
-* 6. Changelog *
-- Fourth Version
- - supports multiple galleries
+* 0.43
+	* Slashes are now allowed in gallery names
+	* Previous/Next buttons have been added photo pages
+	* Automatic Index pages have been added and are themable
+	* Adds *postcards* and *minimal* themes
 
-* 7. Contact *
-Nicholas Paun <nicholaspaun@gmail.com>, http://iceberg.dnsalias.net
+* 0.42
+	* Supports multiple galleries
+	* Includes *minty* theme
+
+
+## 7. Contact ##
+Nicholas Paun <np@icebergsystems.ca>, <http://www.icebergsystems.ca/>
+
