@@ -39,7 +39,7 @@ function main($_MINT,$_INDEX)
   $show = $_GET['show'];
   page_header($_MINT);
   
-  switch($_MINT['page']) #Switch on page mode
+  switch($_MINT['photodir']) #Switch on page mode
    {
     case "/": #If the configuration file specifies photos from /, do an index
      content_index($_INDEX,$_MINT);
