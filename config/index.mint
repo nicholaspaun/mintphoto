@@ -2,7 +2,7 @@
 #MintPhoto example index file
 #Add all galleries that should be displayed to the array.
 
-$_INDEX['to Utah'] = array('conference.mint'); #List of valid galleries
+$_INDEX['to Utah'] = array('conference'); #List of valid galleries
 
 
 $_MINT['version'] = "0.43";
