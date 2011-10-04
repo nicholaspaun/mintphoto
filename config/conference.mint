@@ -2,7 +2,7 @@
 #MintPhoto example configuration file
 
 
-$_MINT['version'] = "0.42"; #Configuration Version
+$_MINT['version'] = "0.43"; #Configuration Version
 
 $_MINT['photodir'] = "/srv/www/htdocs/Photos/Provo2011/Conference/"; #Directory with Images (should be http accessible)
 $_MINT['thumbdir'] = "/mint4c/data/provo2011/conference/"; #Directory with thumbnails
