@@ -79,6 +79,7 @@ function content_index($_INDEX)
       require("config/$gallery.mint");
 
       $icon = $_MINT['thumbdir'].$_MINT['icon'];
+      $title = $_MINT['title'];
 
  echo <<<EOF
       <div class='mintphoto-imagepreview'>
