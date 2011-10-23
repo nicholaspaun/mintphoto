@@ -1,22 +1,32 @@
 #!/bin/bash
 #MintPhoto installer
-#(C) Copyright 2009-2010 Nicholas Paun. All Rights Reserved.
+#(C) Copyright 2009-2011 Nicholas Paun. All Rights Reserved.
 
-INSTALLDIR="/srv/www/htdocs/mint4c/" #Directory to copy MintPhoto files
-TOOLDIR="/usr/local/bin/" #Directory to copy tools
+INSTALLDIR="/srv/www/htdocs/mint4c" #Directory to copy MintPhoto files to
+TOOLDIR="/usr/local/bin" #Directory to install tools
 
 which php &> /dev/null
 if [[ $? != 0 ]]; then
- echo "PHP not found"
+ echo "PHP not found. Exiting."
+ exit 1
+fi
+
+php -m | grep -q "exif"
+if [[$? != 0]]; then
+ echo "PHP EXIF module not found. Exiting."
  exit 1
 fi
 
 which jhead &> /dev/null
 if [[ $? != 0 ]]; then
- echo "jhead not found"
+ echo "jhead not found. Tools cannot be used."
+ exit 1
 fi
 
-rsync -av ./ $INSTALLDIR
-rsync -av ./tools/ $TOOLDIR
+if [[ $2 != "" ]]; then
+  INSTALLDIR="$2" #Allow user to choose installdir
+ fi
+ rsync -av ./ $INSTALLDIR
+ rsync -av ./tools/ $TOOLDIR
 
 exit 0

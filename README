@@ -12,7 +12,7 @@
 
 ## 1. Issues/Roadmap ##
 
-* Admin interface can't create and edit galleries, yet. (0.44)
+* Needs Administration interface for galleries (0.44)
 * Media RSS Support (0.44)
 
 ## 2. How to Install ##
@@ -28,7 +28,7 @@
 1. Create a configuration file for your gallery. (You can set a title, stylesheet and photo/thumb directories)
 2. Run `thumbify` (from `tools/`) to generate thumbnails.
 3. Add the gallery to `index.mint`
-4. Use the admin interface `/mint4c/a/<gallery>` to set captions
+4. Use `commentify` (from `tools/`) to set captions
 
 ## 4. About the Themes ##
 
