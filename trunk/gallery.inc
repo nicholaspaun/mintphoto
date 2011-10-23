@@ -86,7 +86,7 @@ function content_index($_INDEX)
        <a href='$script$gallery' class='mintphoto-anchor'>
         <img src='$icon' title='$title' alt='$title' class='mintphoto-thumb' />
        </a>
-      <p class='mintphoto-caption-title'>
+      <p class='mintphoto-caption-small mintphoto-caption-index'>
        <a class='mintphoto-caption-link' href='$script$gallery'>$title</a>
       </p>
      </div>
