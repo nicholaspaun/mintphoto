@@ -1,0 +1,56 @@
+# README for MintPhoto 0.43
+*(C) Copyright 2009-2011 Nicholas Paun. All Rights Reserved.*
+
+## Contents ##
+
+1. Issues
+2. How to Install
+3. Gallery Setup
+4. About the Themes
+5. Changelog
+6. Contact
+
+## 1. Issues/Roadmap ##
+
+* Needs Administration interface for galleries (0.44)
+* Media RSS Support (0.44)
+
+## 2. How to Install ##
+
+1. Run `./install`
+2. Read *Gallery Setup*
+3. Modify example configuration to your needs
+4. Generate gallery
+5. Try it out!
+
+## 3. Gallery Setup ##
+
+1. Create a configuration file for your gallery. (You can set a title, stylesheet and photo/thumb directories)
+2. Run `thumbify` (from `tools/`) to generate thumbnails.
+3. Add the gallery to `index.mint`
+4. Use `commentify` (from `tools/`) to set captions
+
+## 4. About the Themes ##
+
+* The Minty theme is the default MintPhoto theme. It has a light minty-green background and a clean look.
+  *The header image is a small slice from the header of the Linuxmint Project*
+* Minimal is a simple grey and white theme that can be used for testing.
+* Postcards is the latest MintPhoto theme. It uses CSS3 to create drop shadows for a scrapbook effect.
+  *Idea for the drop shadow: <http://nicolasgallagher.com/css-drop-shadows-without-images/>*
+
+## 5. Changelog ##
+
+* 0.43
+	* Slashes are now allowed in gallery names
+	* Previous/Next buttons have been added photo pages
+	* Automatic Index pages have been added and are themable
+	* Adds *postcards* and *minimal* themes
+
+* 0.42
+	* Supports multiple galleries
+	* Includes *minty* theme
+
+
+## 6. Contact ##
+Nicholas Paun <np@icebergsystems.ca>, <http://www.icebergsystems.ca/>
+

@@ -1,0 +1,15 @@
+#!/usr/bin/php
+<?php
+#thumbify: thumbnail generator
+#(C) Copyright 2010 Nicholas Paun. All Rights Reserved.
+
+$dest = $argv[1];
+$imgsize ="190X163";
+$images = glob("*.{jpg,JPG,jpeg,JPEG}",GLOB_BRACE);
+
+foreach ($images as $photo)
+ {
+  echo ($photo."\n");
+  passthru("convert -resize $imgsize '$photo' '$dest/thumb_$photo'");
+ }
+?>
