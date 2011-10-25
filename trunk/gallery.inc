@@ -13,6 +13,7 @@ function exif_get_comment($photo)
   if (!isset($comment))
    $comment = "";
 
+  $comment = htmlspecialchars(strip_tags($comment),ENT_QUOTES); #Clean HTML
   return($comment);
  }
 
@@ -47,6 +48,7 @@ function content_photo($photo,$_MINT)
   //This function displays a single image
   $photodir = $_MINT['photodir'];
   $caption = exif_get_comment($_SERVER['DOCUMENT_ROOT'].$photodir.$photo); #Lookup captions
+
   $script = parse_url($_SERVER['REQUEST_URI'],PHP_URL_PATH); #Remove query string  
 
   $glob = glob($_SERVER['DOCUMENT_ROOT'].$photodir."*");
@@ -80,6 +82,8 @@ function content_index($_INDEX)
 
       $icon = $_MINT['thumbdir'].$_MINT['icon'];
       $title = $_MINT['title'];
+      $title = htmlspecialchars(strip_tags($title),ENT_QUOTES); #Clean HTML
+
 
  echo <<<EOF
       <div class='mintphoto-imagepreview'>
