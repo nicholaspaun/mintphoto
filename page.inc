@@ -8,6 +8,8 @@ function page_header($_MINT)
  {
   //This function prints headers
   $title = $_MINT['title'];
+  $C_title = htmlspecialchars(strip_tags($title),ENT_QUOTES); #Clean HTML
+
   $REQUEST_URI = $_SERVER['SCRIPT_NAME']; 
   $stylesheet = dirname($REQUEST_URI)."/".$_MINT['stylesheet']; #Prevents PATH_INFO screwing
   
@@ -17,7 +19,7 @@ function page_header($_MINT)
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <!-- Powered by MintPhoto 0.43 -->
-<title>$title</title>
+<title>$C_title</title>
 <link rel="stylesheet" href="$stylesheet" />
 </head>
 <body>
