@@ -97,6 +97,11 @@ body
   color: black;
  }
 
+.mintphoto-caption-index
+  {
+   font-size: 100%;
+  }
+
 .mintphoto-caption-link
 {
  display: block;
