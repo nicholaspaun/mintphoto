@@ -88,6 +88,12 @@ body
    font-size: 100%;
   }
 
+.mintphoto-section
+ {
+  color: white;
+  text-align: center;
+ }
+
 .mintphoto-caption-link
 {
  display: block;
