@@ -11,7 +11,7 @@ function page_header($_MINT)
   $C_title = htmlspecialchars(strip_tags($title),ENT_QUOTES); #Clean HTML
 
   $script_path = $_SERVER['SCRIPT_NAME']; 
-  $stylesheet = dirname($script_path)."/".$_MINT['stylesheet']."/style.css"; #Prevents PATH_INFO screwing
+  $stylesheet = dirname($script_path)."/style/".$_MINT['stylesheet']."/style.css"; #Prevents PATH_INFO screwing
   
   echo <<<HEADER
 <?xml version="1.0" encoding="UTF-8" ?>
