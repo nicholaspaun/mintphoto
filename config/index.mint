@@ -7,7 +7,7 @@ $_INDEX['to Utah'] = array('conference'); #List of valid galleries
 
 $_MINT['version'] = "0.43";
 $_MINT['title'] = "My Trips";
-$_MINT['stylesheet'] = "style/minty/style.css";
+$_MINT['stylesheet'] = "minty";
 $_MINT['photodir'] = "/"; #This is an index of everything
 
 ?>
