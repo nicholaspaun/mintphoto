@@ -9,5 +9,6 @@ $_MINT['version'] = "0.43";
 $_MINT['title'] = "My Trips";
 $_MINT['stylesheet'] = "minty";
 $_MINT['photodir'] = "/"; #This is an index of everything
+$_MINT['icon'] = "/mint4c/favicon.png";
 
 ?>

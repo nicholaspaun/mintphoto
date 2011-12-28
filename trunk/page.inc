@@ -9,6 +9,7 @@ function page_header($_MINT)
   //This function prints headers
   $title = $_MINT['title'];
   $C_title = htmlspecialchars(strip_tags($title),ENT_QUOTES); #Clean HTML
+  $icon = $_MINT['thumbdir'].$_MINT['icon'];
 
   $script_path = $_SERVER['SCRIPT_NAME']; 
   $stylesheet = dirname($script_path)."/style/".$_MINT['stylesheet']."/style.css"; #Prevents PATH_INFO screwing
@@ -21,6 +22,7 @@ function page_header($_MINT)
 <!-- Powered by MintPhoto 0.43 -->
 <title>$C_title</title>
 <link rel="stylesheet" href="$stylesheet" />
+<link rel="icon" href="$icon" />
 </head>
 <body>
  <h1 class="mintphoto-title">$title</h1>
