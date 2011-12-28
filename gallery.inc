@@ -78,6 +78,10 @@ function content_index($_INDEX)
     foreach ($galleries as $gallery)
      {
       $gallery = ltrim($gallery,'/');
+
+      if (strpos($gallery,'.') === 0) #Support hiding a gallery
+        continue;
+
       require("config/$gallery.mint");
 
       $icon = $_MINT['thumbdir'].$_MINT['icon'];
