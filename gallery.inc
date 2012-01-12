@@ -73,7 +73,8 @@ function content_index($_INDEX)
 
   foreach($_INDEX as $section => $galleries)
    {
-    echo("<br style='clear: both;'/><h2 class='mintphoto-section'> $section </h2>");
+    $id = strtolower(str_replace(" ","-",$section));
+    echo("<br style='clear: both;'/><h2 class='mintphoto-section' id='$id'> $section </h2>");
     
     foreach ($galleries as $gallery)
      {
