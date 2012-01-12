@@ -9,5 +9,5 @@ $_MINT['thumbdir'] = "/Photos/.MintPhoto/provo2011/conference/"; #Directory with
 
 $_MINT['title'] = "Provo 2011: The Conference"; #Title of Gallery
 $_MINT['stylesheet'] = "minty"; #Stylesheet to use (directory only)
-$_MINT['icon'] = "thumb_P1180528.JPG"; #Thumbnail in gallery listings
+$_MINT['icon'] = "P1180528.JPG"; #Thumbnail in gallery listings
 ?>

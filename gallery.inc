@@ -80,11 +80,11 @@ function content_index($_INDEX)
       $gallery = ltrim($gallery,'/');
 
       if (strpos($gallery,'.') === 0) #Support hiding a gallery
-        continue;
+       continue;
 
       require("config/$gallery.mint");
 
-      $icon = $_MINT['thumbdir'].$_MINT['icon'];
+      $icon = $_MINT['thumbdir']."thumb_".$_MINT['icon'];
       $title = $_MINT['title'];
       $title = htmlspecialchars(strip_tags($title),ENT_QUOTES); #Clean HTML
 
