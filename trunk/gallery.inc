@@ -80,7 +80,7 @@ function content_index($_INDEX)
      {
       $gallery = ltrim($gallery,'/');
 
-      if (strpos($gallery,'.') === 0) #Support hiding a gallery
+      if (strpos(basename($gallery),'.') === 0) #Support hiding a gallery
        continue;
 
       require("config/$gallery.mint");

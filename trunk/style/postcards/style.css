@@ -3,9 +3,10 @@
 
 @import url('//fonts.googleapis.com/css?family=Waiting+for+the+Sunrise'); /* Comment out this line to disable font. */
  
-body
+html,body
  {
   background-color: #B5A277;
+  margin-top: 0;
  }
 
 .mintphoto-content
@@ -22,7 +23,7 @@ body
   color: black;
   background: url('airmail-bg4.png') repeat-x bottom left;
   max-height: 125px;
-  margin: 0% 4%;
+  margin: 0% 4% 0%;
   padding: 3% 0%;
   
   /* Drop Shadow */
@@ -61,18 +62,13 @@ body
   text-align: center;
  }
 
-.mintphoto-nav
+/*.mintphoto-nav
  {
   text-decoration: none;
   color: white;
   font-size: 150%;
   opacity: 0.5;
- }
-  
-.mintphoto-home
- {
-  text-decoration: none;
- }
+ }*/
 
 .mintphoto-imagepreview
  {
@@ -98,14 +94,14 @@ body
  }
 
 .mintphoto-caption-index
-  {
-   font-size: 100%;
-  }
+ {
+  font-size: 100%;
+ }
 
 .mintphoto-caption-link
-{
- display: block;
- text-decoration: none;
- margin-top: 20px;
- color: black;
-} 
+ {
+  display: block;
+  text-decoration: none;
+  margin-top: 20px;
+  color: black;
+ } 
