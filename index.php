@@ -7,6 +7,7 @@
 require('config/index.mint'); #Load index file
 require('page.inc'); #Load page header/footer functions
 require('gallery.inc'); #Gallery, photo and index functions
+define('JS',TRUE); #Turn on keyboard shortcuts, etc.
 
 function gallery_switch($_INDEX,$_MINT)
  {
@@ -22,7 +23,7 @@ function gallery_switch($_INDEX,$_MINT)
 
   if (in_array($gallery,$_INDEX)) #Exploit prevention
    {
-    unset($_MINT); #Remov index settings
+    unset($_MINT); #Remove index settings
     require("config/$gallery.mint"); #Load gallery
     return($_MINT);
    }

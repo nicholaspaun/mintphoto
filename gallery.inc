@@ -1,5 +1,5 @@
 <?php
-#(C) Copyright 2009-2011 Nicholas Paun. All Rights Reserved.
+#(C) Copyright 2009-2012 Nicholas Paun. All Rights Reserved.
 #MintPhoto: Simple Photo Gallery
 
 #Gallery functions for MintPhoto
@@ -62,7 +62,7 @@ echo <<<EOF
      <img src='$photodir$photo' title='$caption' alt='$caption' class='mintphoto-image' />
     </a>
    </p>
-   <p class='mintphoto-caption'><a href='$script?show=$previous' class='mintphoto-nav' title='Previous'>&larr;</a> $caption <a href='$script?show=$next' class='mintphoto-nav' title='Next'>&rarr;</a></p>
+   <p class='mintphoto-caption'><a href='$script?show=$previous' class='mintphoto-nav' title='Previous' id='nav-prev'>&larr;</a> $caption <a href='$script?show=$next' class='mintphoto-nav' title='Next' id='nav-next'>&rarr;</a></p>
 EOF;
  }
 
