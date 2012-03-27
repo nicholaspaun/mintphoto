@@ -11,8 +11,8 @@ function page_header($_MINT)
   $C_title = htmlspecialchars(strip_tags($title),ENT_QUOTES); #Clean HTML
   $icon = $_MINT['thumbdir'].$_MINT['icon'];
 
-  $script_path = $_SERVER['SCRIPT_NAME']; 
-  $stylesheet = dirname($script_path)."/style/".$_MINT['stylesheet']."/style.css"; #Prevents PATH_INFO screwing
+  $script_path = dirname($_SERVER['SCRIPT_NAME']); 
+  $stylesheet = $script_path."/style/".$_MINT['stylesheet']."/style.css"; #Prevents PATH_INFO screwing
   
   if (constant('JS'))
    $script = "<script src='".$script_path."/script.js"."'></script>";
